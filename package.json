@@ -2,18 +2,29 @@
   "name": "vue-project",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "test:unit": "vue-cli-service test:unit",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "jest --watchAll"
   },
   "dependencies": {
+    "jest": "^29.7.0",
     "vue": "^3.4.21",
     "vuex": "^4.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@testing-library/vue": "^8.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.0.5",
     "vite": "^5.2.8"
-  }
+  },
+  "type": "module"
 }
